@@ -1,0 +1,42 @@
+:root {
+    --primary: rgb(31, 29, 29); 
+    --secondary: rgb(246, 242, 242);
+    --tertiary: rgb(113, 110, 110);
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--tertiary);
+}
+.navBar h1{
+    padding: 20px;
+}
+.navBar ul{
+    list-style: none;
+    display: flex;
+    padding-top: 32px;
+
+}
+.navBar li a{
+    text-decoration: none;
+    color: var(--primary);
+    padding: 20px;
+}
+
+@media (max-width: 640px) {
+    .navBar{
+        flex-direction: column;
+    }
+    .navBar h1{
+        text-align: center;
+    }
+    .navBar ul{
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+}
